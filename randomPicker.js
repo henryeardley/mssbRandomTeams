@@ -22,7 +22,7 @@ function Dictionary() {
     };
     this.findAt = function(key){
         for(var i = 0; i <this.datastore.length; i++){
-            if(this.datastore)[i].key === key{
+            if(this.datastore[i].key === key){
                 return this.datastore[i].value;
             }
         }
@@ -33,6 +33,11 @@ function Dictionary() {
     };
 }
 
+base32Name = ['Mario','Luigi'];
+base32Image = [1,2]
+
 var Dictionary1 = new Dictionary()
-Dictionary1.add("one", 1)
-console.log(Dictionary1.datastore)
+
+Dictionary1.add('Mario',6);
+
+console.log(Dictionary1)
